@@ -7,5 +7,5 @@ services:
     working_dir: /kaggle/working
     ports:
       - 8080:8080
-    command: jupyter-lab --no-browser --port=8080 --ip=0.0.0.0 --allow-root --NotebookApp.token=''
+    command: jupyter notebook --port 8080 --ip=0.0.0.0 --allow-root --NotebookApp.token=''
     restart: always
